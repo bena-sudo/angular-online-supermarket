@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { MainComponent } from './components/main/main.component';
+import { LoginComponent } from './features/auth/pages/login/login.component';
+import { ProductMainComponent } from './features/products/pages/product-main/product-main.component';
 
 export const routes: Routes = [
-    { path: '', component: MainComponent }, // Ruta raíz
-    { path: 'login', component: LoginComponent }, // Ruta /about
+    { path: '', component: ProductMainComponent },
+    { path: 'login', component: LoginComponent },
     { path: '**', redirectTo: '' }, 
   ];
