@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { ProductService } from '../../service/product.service';
+import { Product } from '../../../../core/models/product.model';
 
 @Component({
   selector: 'app-product-grid',
@@ -9,7 +10,7 @@ import { ProductService } from '../../service/product.service';
   styleUrl: './product-grid.component.css',
 })
 export class ProductGridComponent {
-  products: any[] = [];
+  products: Product[] = [];
 
   constructor(private readonly productService: ProductService) {}
 
