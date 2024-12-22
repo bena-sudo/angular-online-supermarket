@@ -45,7 +45,7 @@ export class ProductService {
       throw new Error(error.message);
     }
 
-    return data || null;
+    return data ?? null;
   }
 
   async updateProduct(
@@ -61,7 +61,7 @@ export class ProductService {
       throw new Error(error.message);
     }
 
-    return data || null;
+    return data ?? null;
   }
 
   async deleteProduct(id: string): Promise<Product[] | null> {
@@ -74,6 +74,6 @@ export class ProductService {
       throw new Error(error.message);
     }
 
-    return data || null;
+    return data ?? null;
   }
 }
