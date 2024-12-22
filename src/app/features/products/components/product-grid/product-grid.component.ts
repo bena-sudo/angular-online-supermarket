@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProductCardComponent } from '../product-card/product-card.component';
 import { ProductService } from '../../service/product.service';
 import { Product } from '../../../../core/models/product.model';
@@ -9,7 +9,7 @@ import { Product } from '../../../../core/models/product.model';
   templateUrl: './product-grid.component.html',
   styleUrl: './product-grid.component.css',
 })
-export class ProductGridComponent {
+export class ProductGridComponent implements OnInit {
   products: Product[] = [];
 
   constructor(private readonly productService: ProductService) {}
