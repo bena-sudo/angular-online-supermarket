@@ -7,9 +7,8 @@
     role="img"
     aria-label="Placeholder: Thumbnail"
     preserveAspectRatio="xMidYMid slice"
-    focusable="false"
-  >
-    <title>{{ product ? product.name : "NO NAME" }}</title>
+    focusable="false">
+    <title>{{ product ? product.name : 'NO NAME' }}</title>
     <rect width="100%" height="100%" fill="#55595c"></rect>
     <text
       x="50%"
@@ -17,14 +16,13 @@
       fill="#eceeef"
       text-anchor="middle"
       dominant-baseline="middle"
-      dy=".3em"
-    >
-      {{ product ? product.name : "NO NAME" }}
+      dy=".3em">
+      {{ product ? product.name : 'NO NAME' }}
     </text>
   </svg>
   <div class="card-body">
     <p class="card-text">
-      {{ product ? product.description : "NO DESCRIPTION" }}
+      {{ product ? product.description : 'NO DESCRIPTION' }}
     </p>
     <div class="d-flex justify-content-between align-items-center">
       <div class="btn-group">
