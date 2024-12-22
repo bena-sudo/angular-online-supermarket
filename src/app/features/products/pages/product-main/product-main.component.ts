@@ -13,6 +13,6 @@ import { ProductGridComponent } from '../../components/product-grid/product-grid
     ProductGridComponent,
   ],
   templateUrl: './product-main.component.html',
-  styleUrl: './product-main.component.css',
+  styleUrl: './product-main.component.css'
 })
 export class ProductMainComponent {}
