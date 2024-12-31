@@ -38,7 +38,7 @@ Follow these steps to clone, set up, and run the project locally:
 
 1. **Clone the repository**  
    ```bash
-   git clone https://github.com/yourusername/angular-online-supermarket.git
+   git clone https://github.com/bena-sudo/angular-online-supermarket.git
    cd angular-online-supermarket
    ```
 2. **Install dependencies**
@@ -47,11 +47,6 @@ Follow these steps to clone, set up, and run the project locally:
    npm install
    ```
 3. **Run the development server**
-   Ensure you have Node.js installed on your system. Then, install the project dependencies using:  
-   ```bash
-   npm install
-   ```
-4. **Install dependencies**
    Start the Angular development server with the following command:
    ```bash
    ng serve
@@ -60,9 +55,9 @@ Follow these steps to clone, set up, and run the project locally:
    ```bash
    http://localhost:4200
    ```
-5. **Build the project (optional)**
+4. **Build the project (optional)**
    To generate a production-ready build of the project, use:
    ```bash
    ng build --prod
    ```
-   The build artifacts will be stored in the dist/ directory.
+   The build artifacts will be stored in the `dist/` directory.
