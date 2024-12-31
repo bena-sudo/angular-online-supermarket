@@ -13,7 +13,8 @@ The **Angular Online Supermarket** is designed to simplify and enhance the shopp
 
 - **Frontend Framework:** Angular  
 - **Programming Languages:** TypeScript, HTML5, CSS3  
-- **Styling Framework:** Bootstrap  
+- **Styling Framework:** Bootstrap
+- **Backend:** Supabase (Database and Authentication)
 - **Development Tools:** Node.js, Visual Studio Code  
 - **Version Control:** Git  
 
