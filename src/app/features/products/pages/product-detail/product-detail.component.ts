@@ -8,11 +8,7 @@ import { ProductViewComponent } from '../../components/product-view/product-view
 
 @Component({
   selector: 'app-product-detail',
-  imports: [
-    FooterComponent,
-    HeaderComponent,
-    ProductViewComponent
-],
+  imports: [FooterComponent, HeaderComponent, ProductViewComponent],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css',
 })
