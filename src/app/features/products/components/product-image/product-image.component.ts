@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { Product } from '../../../../core/models/product.model';
 
 @Component({
-  selector: 'app-product-card',
+  selector: 'app-product-image',
   imports: [],
-  templateUrl: './product-card.component.html',
-  styleUrl: './product-card.component.css',
+  templateUrl: './product-image.component.html',
+  styleUrl: './product-image.component.css'
 })
-export class ProductCardComponent {
+export class ProductImageComponent {
   @Input({ required: true }) product?: Product | null;
 }

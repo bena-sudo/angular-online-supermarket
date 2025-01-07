@@ -1,0 +1,15 @@
+<div class="container mt-4">
+  <div class="row row-cols-1 row-cols-sm-2  g-3">
+    <app-product-image [product]="product"></app-product-image>
+    <div class="card">
+      <div class="card-header">
+        Category
+      </div>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">{{ product ? product.name : 'NO NAME' }}</h5>
+        <p class="card-text">{{ product ? product.description : 'NO DESCRIPTION' }}</p>
+        <a href="#" class="btn btn-warning w-100 mt-auto">Add to cart</a>
+      </div>      
+    </div>
+  </div>
+</div>
