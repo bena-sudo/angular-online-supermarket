@@ -6,8 +6,6 @@ import { FooterComponent } from '../../../../shared/components/footer/footer.com
   selector: 'app-category-main',
   imports: [HeaderComponent, FooterComponent],
   templateUrl: './category-main.component.html',
-  styleUrl: './category-main.component.css'
+  styleUrl: './category-main.component.css',
 })
-export class CategoryMainComponent {
-
-}
+export class CategoryMainComponent {}
