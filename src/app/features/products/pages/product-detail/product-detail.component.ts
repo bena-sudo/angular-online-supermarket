@@ -2,14 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { Product } from '../../../../core/models/product.model';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../service/product.service';
-import { FooterComponent } from "../../../../shared/components/footer/footer.component";
-import { HeaderComponent } from "../../../../shared/components/header/header.component";
-import { ProductViewComponent } from "../../components/product-view/product-view.component";
-import { ProductCardComponent } from "../../components/product-card/product-card.component";
+import { FooterComponent } from '../../../../shared/components/footer/footer.component';
+import { HeaderComponent } from '../../../../shared/components/header/header.component';
+import { ProductViewComponent } from '../../components/product-view/product-view.component';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [FooterComponent, HeaderComponent, ProductViewComponent, ProductCardComponent],
+  imports: [
+    FooterComponent,
+    HeaderComponent,
+    ProductViewComponent
+],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.css',
 })

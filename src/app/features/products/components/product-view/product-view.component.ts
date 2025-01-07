@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Product } from '../../../../core/models/product.model';
-import { ProductImageComponent } from "../product-image/product-image.component";
+import { ProductImageComponent } from '../product-image/product-image.component';
 
 @Component({
   selector: 'app-product-view',
