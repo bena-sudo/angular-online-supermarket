@@ -8,7 +8,12 @@ import { CategoryItemListComponent } from '../../components/category-item-list/c
 
 @Component({
   selector: 'app-category-main',
-  imports: [RouterLink,HeaderComponent, FooterComponent, CategoryItemListComponent],
+  imports: [
+    RouterLink,
+    HeaderComponent,
+    FooterComponent,
+    CategoryItemListComponent,
+  ],
   templateUrl: './category-main.component.html',
   styleUrl: './category-main.component.css',
 })
