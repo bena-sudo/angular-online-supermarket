@@ -22,6 +22,19 @@ export class ProductService {
     return data || [];
   }
 
+  async getProductsByCategoryId(categoryId: string): Promise<Product[]> {
+    const { data, error } = await this.supabase.client
+      .from(this.table)
+      .select('*')
+      .eq('categoryID', categoryId); // Filtrar por categoryID
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    return data || [];
+  }
+
   async getProductById(id: string): Promise<Product | null> {
     const { data, error } = await this.supabase.client
       .from(this.table)
