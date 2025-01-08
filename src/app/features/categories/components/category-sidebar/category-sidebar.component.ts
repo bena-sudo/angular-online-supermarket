@@ -10,7 +10,7 @@ import { RouterLink } from '@angular/router';
   templateUrl: './category-sidebar.component.html',
   styleUrl: './category-sidebar.component.css',
 })
-export class CategorySidebarComponent implements OnInit{
+export class CategorySidebarComponent implements OnInit {
   categories: Category[] = [];
 
   constructor(private readonly categoryService: CategoryService) {}
