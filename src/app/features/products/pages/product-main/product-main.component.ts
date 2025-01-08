@@ -17,7 +17,7 @@ import { ProductService } from '../../service/product.service';
   templateUrl: './product-main.component.html',
   styleUrl: './product-main.component.css',
 })
-export class ProductMainComponent implements OnInit{
+export class ProductMainComponent implements OnInit {
   products: Product[] = [];
 
   constructor(private readonly productService: ProductService) {}
