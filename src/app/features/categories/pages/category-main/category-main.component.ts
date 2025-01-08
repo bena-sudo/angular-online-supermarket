@@ -3,7 +3,7 @@ import { HeaderComponent } from '../../../../shared/components/header/header.com
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { Category } from '../../../../core/models/category.model';
 import { CategoryService } from '../../service/category.service';
-import { CategoryItemListComponent } from "../../components/category-item-list/category-item-list.component";
+import { CategoryItemListComponent } from '../../components/category-item-list/category-item-list.component';
 
 @Component({
   selector: 'app-category-main',
