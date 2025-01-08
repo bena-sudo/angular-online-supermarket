@@ -1,36 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component } from '@angular/core';
 import { HeaderComponent } from '../../../../shared/components/header/header.component';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
-import { Category } from '../../../../core/models/category.model';
-import { CategoryService } from '../../service/category.service';
-import { CategoryItemListComponent } from '../../components/category-item-list/category-item-list.component';
+import { ProductGridComponent } from '../../../products/components/product-grid/product-grid.component';
+import { CategorySidebarComponent } from "../../components/category-sidebar/category-sidebar.component";
 
 @Component({
   selector: 'app-category-main',
-  imports: [
-    RouterLink,
-    HeaderComponent,
-    FooterComponent,
-    CategoryItemListComponent,
-  ],
+  imports: [HeaderComponent, FooterComponent, ProductGridComponent, CategorySidebarComponent],
   templateUrl: './category-main.component.html',
   styleUrl: './category-main.component.css',
 })
-export class CategoryMainComponent implements OnInit {
-  categories: Category[] = [];
-
-  constructor(private readonly categoryService: CategoryService) {}
-
-  ngOnInit(): void {
-    this.loadCategories();
-  }
-
-  async loadCategories(): Promise<void> {
-    try {
-      this.categories = await this.categoryService.getCategories();
-    } catch (error) {
-      console.error('Error when loading categories:', error);
-    }
-  }
-}
+export class CategoryMainComponent {}
