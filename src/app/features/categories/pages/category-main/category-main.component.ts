@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../../../../shared/components/header/header.component';
 import { FooterComponent } from '../../../../shared/components/footer/footer.component';
 import { Category } from '../../../../core/models/category.model';
@@ -7,7 +8,7 @@ import { CategoryItemListComponent } from '../../components/category-item-list/c
 
 @Component({
   selector: 'app-category-main',
-  imports: [HeaderComponent, FooterComponent, CategoryItemListComponent],
+  imports: [RouterLink,HeaderComponent, FooterComponent, CategoryItemListComponent],
   templateUrl: './category-main.component.html',
   styleUrl: './category-main.component.css',
 })
