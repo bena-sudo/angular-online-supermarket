@@ -39,7 +39,7 @@ export class ProductService {
     const { data, error } = await this.supabase.client
       .from(this.table)
       .select('*')
-      .eq('categoryID', categoryId); // Filtrar por categoryID
+      .eq('categoryID', categoryId);
 
     if (error) {
       throw new Error(error.message);
