@@ -21,6 +21,14 @@
     </li>
     <li>
       <a
+        [routerLink]="['/products']"
+        routerLinkActive="['active']"
+        class="nav-link px-2 link-secondary"
+        >Products</a
+      >
+    </li>
+    <li>
+      <a
         [routerLink]="['/categories']"
         routerLinkActive="['active']"
         class="nav-link px-2 link-secondary"
@@ -30,7 +38,7 @@
   </ul>
 
   <div class="col-md-3 text-end">
-    <button type="button" class="btn btn-outline-primary me-2">Login</button>
-    <button type="button" class="btn btn-primary">Sign-up</button>
+    <a  [routerLink]="['/login']" class="btn btn-outline-primary me-2">Login</a>
+    <a [routerLink]="['/login']" class="btn btn-primary">Sign-up</a>
   </div>
 </header>
