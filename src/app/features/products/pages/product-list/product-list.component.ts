@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FooterComponent } from "../../../../shared/components/footer/footer.component";
-import { ProductGridComponent } from "../../components/product-grid/product-grid.component";
-import { HeaderComponent } from "../../../../shared/components/header/header.component";
+import { FooterComponent } from '../../../../shared/components/footer/footer.component';
+import { ProductGridComponent } from '../../components/product-grid/product-grid.component';
+import { HeaderComponent } from '../../../../shared/components/header/header.component';
 import { Product } from '../../../../core/models/product.model';
 import { ProductService } from '../../service/product.service';
 
@@ -9,7 +9,7 @@ import { ProductService } from '../../service/product.service';
   selector: 'app-product-list',
   imports: [FooterComponent, ProductGridComponent, HeaderComponent],
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css'
+  styleUrl: './product-list.component.css',
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
