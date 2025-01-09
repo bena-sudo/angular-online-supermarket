@@ -28,7 +28,7 @@ export class ProductMainComponent implements OnInit {
 
   async loadProducts(): Promise<void> {
     try {
-      this.products = await this.productService.getProducts();
+      this.products = await this.productService.getLimitedProducts();
     } catch (error) {
       console.error('Error when loading products:', error);
     }

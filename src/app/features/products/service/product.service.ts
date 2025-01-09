@@ -22,6 +22,19 @@ export class ProductService {
     return data || [];
   }
 
+  async getLimitedProducts(): Promise<Product[]> {
+    const { data, error } = await this.supabase.client
+      .from(this.table)
+      .select('*')
+      .limit(9);
+
+    if (error) {
+      throw new Error(error.message);
+    }
+
+    return data || [];
+  }
+
   async getProductsByCategoryId(categoryId: string): Promise<Product[]> {
     const { data, error } = await this.supabase.client
       .from(this.table)
