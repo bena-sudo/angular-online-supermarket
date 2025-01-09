@@ -27,12 +27,14 @@ export class CategoryMainComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    const categoryID = this.route.snapshot.paramMap.get('id');
-    if (categoryID) {
-      this.loadProductsByCategoryId(categoryID);
-    } else {
-      this.loadProducts();
-    }
+    this.route.paramMap.subscribe(async params => {
+      const categoryId = params.get('id');
+      if (categoryId) {
+        await this.loadProductsByCategoryId(categoryId);
+      } else {
+        await this.loadProducts();
+      }
+    });
   }
 
   async loadProducts(): Promise<void> {
