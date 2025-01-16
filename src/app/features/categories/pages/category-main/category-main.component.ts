@@ -23,11 +23,11 @@ export class CategoryMainComponent implements OnInit {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly productService: ProductService
+    private readonly productService: ProductService,
   ) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe(async params => {
+    this.route.paramMap.subscribe(async (params) => {
       const categoryId = params.get('id');
       if (categoryId) {
         await this.loadProductsByCategoryId(categoryId);

@@ -17,7 +17,7 @@ export class ProductDetailComponent implements OnInit {
 
   constructor(
     private readonly route: ActivatedRoute,
-    private readonly productService: ProductService
+    private readonly productService: ProductService,
   ) {}
 
   ngOnInit(): void {

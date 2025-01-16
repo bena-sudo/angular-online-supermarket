@@ -50,7 +50,7 @@ export class CategoryService {
 
   async updateCategory(
     id: string,
-    updates: Partial<Category>
+    updates: Partial<Category>,
   ): Promise<Category[] | null> {
     const { data, error } = await this.supabase.client
       .from(this.table)

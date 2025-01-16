@@ -76,7 +76,7 @@ export class ProductService {
 
   async updateProduct(
     id: string,
-    updates: Partial<Product>
+    updates: Partial<Product>,
   ): Promise<Product[] | null> {
     const { data, error } = await this.supabase.client
       .from(this.table)
